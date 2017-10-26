@@ -1,0 +1,21 @@
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+<div class="search">
+  <input type="text"
+      placeholder="Search List"
+      class="filter-input"
+      [(ngModel)]="searchText">
+  <ul>
+  <li *ngFor="let post of albumList">
+    <img src="{{albumList.thumbnail}}" alt="">
+      {{albumList.title}}
+      {{albumList.artist}}
+      {{albumList.released}}
+      {{albumList.notes}}
+  </li>
+  </ul>
+</div>

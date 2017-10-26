@@ -1,4 +1,5 @@
-export class Albums {
+export class Album {
+  id: number;
   title: string;
   artist: string;
   released: string;

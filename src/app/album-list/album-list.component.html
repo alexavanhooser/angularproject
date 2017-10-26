@@ -1,0 +1,18 @@
+<p>
+  album-list works!
+</p>
+<div class="search">
+  <input type="text"
+      placeholder="Search List"
+      class="filter-input"
+      [(ngModel)]="searchText">
+  <ul>
+  <li *ngFor="let album of albums ">
+    <img src="{{album.thumbnail}}" alt="">
+      {{album.title}}
+      {{album.artist}}
+      {{album.released}}
+      {{album.notes}}
+  </li>
+  </ul>
+</div>
